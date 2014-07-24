@@ -1,9 +1,11 @@
 *.py[co]
 .project
 .pydevproject
+.ropeproject
 *~
 *.db
 *.orig
+*.swp
 *.DS_Store
 .coverage
 .vagrant

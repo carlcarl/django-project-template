@@ -9,16 +9,25 @@ INSTALLED_APPS += (
     'debug_toolbar',
 )
 
-INTERNAL_IPS = ('127.0.0.1', )
+INTERNAL_IPS = (
+    '127.0.0.1',
+    'localhost',
+)
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
 
+# Application settings
+# For south
 SOUTH_TESTS_MIGRATE = True
+# End south
 
 CELERY_ALWAYS_EAGER = True
 CELERY_EAGER_PROPAGATES_EXCEPTIONS = True
 
+# For compressor
 COMPRESS_ENABLED = False
+# End compressor
 
 # Special test settings
 if 'test' in sys.argv:
