@@ -154,7 +154,6 @@ INSTALLED_APPS = (
     # 'allauth.socialaccount.providers.stackexchange',
     # 'allauth.socialaccount.providers.twitter',
 
-    'south',
     'compressor',
 )
 
@@ -188,11 +187,6 @@ LOGGING = {
 }
 
 AUTH_USER_MODEL = 'auth.User'
-
-# Application settings
-# For south
-SKIP_SOUTH_TESTS = True
-# End south
 
 # For compressor
 COMPRESS_OFFLINE = True

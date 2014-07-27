@@ -17,11 +17,6 @@ INTERNAL_IPS = (
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
 
-# Application settings
-# For south
-SOUTH_TESTS_MIGRATE = True
-# End south
-
 CELERY_ALWAYS_EAGER = True
 CELERY_EAGER_PROPAGATES_EXCEPTIONS = True
 
